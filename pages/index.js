@@ -2,6 +2,7 @@ import React from 'react';
 import { withStyles } from 'material-ui/styles';
 
 import withRoot from '../components/withRoot';
+import Layout from '../components/Layout';
 
 const styles = theme => ({
   paper: theme.mixins.gutters({
@@ -20,7 +21,11 @@ const styles = theme => ({
 
 class Index extends React.Component {
   render() {
-    return <div>Index Page</div>;
+    return (
+      <Layout>
+        <div>Index Page</div>
+      </Layout>
+    );
   }
 }
 
